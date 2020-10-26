@@ -1,0 +1,113 @@
+body {
+  font-family: "Cinzel", sans-serif;
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#wrapper {
+  border: solid 2px black;
+  margin: auto;
+  background-color: black;
+  box-sizing: border-box;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  border: solid 3px black;
+  padding: 0;
+}
+
+.display-wrapper {
+  background-color: black;
+  height: 20%;
+  padding: 0;
+  margin: 0;
+}
+
+.input-output {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  border: solid dodgerblue;
+  height: 60%;
+  color: aliceblue;
+  font-size: 1.6em;
+  padding: 2px;
+  margin: 1px;
+}
+
+.operation {
+  word-wrap: break-word;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: solid dodgerblue;
+  height: 40%;
+  color: darkorange;
+  padding: 2px;
+  margin: 1px;
+  font-size: 0.8em;
+  word-break: break-all;
+}
+
+.grid-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0;
+  background-color: black;
+  padding: 0;
+  height: 80%;
+  text-align: center;
+  align-content: stretch;
+}
+
+.grid-container > div {
+  padding: 0;
+}
+
+.grid-item {
+  background-color: lightgrey;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 2em;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  border: solid black 1px;
+  padding: 0;
+  margin: 0;
+  transform: scale(0.99);
+}
+
+.grid-item:hover {
+  color: lightgrey;
+  background-color: rgba(111, 112, 122, 0.66);
+  transform: scale(1.03);
+}
+
+.buttonAllClear {
+  grid-column: 1 / span 2;
+  background-color: rgb(159, 21, 21);
+}
+
+.buttonZero {
+  grid-column: 1 / span 2;
+}
+
+.delete {
+  background-color: rgb(159, 21, 21);
+}
+
+.buttonEquals {
+  background-color: blue;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}

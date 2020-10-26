@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="wrapper">
+        <div class="display-wrapper">
+          <div class="operation" id="displayString">0</div>
+          <div class="input-output" id="display">0</div>
+        </div>
+        <div class="grid-container">
+          <button
+            class="buttonAllClear grid-item all-clear"
+            data-key="46"
+            id="clear"
+            value="AC"
+          >
+            AC
+          </button>
+          <button
+            class="delete grid-item"
+            data-key="8"
+            id="clear-current"
+            value="CE"
+          >
+            C
+          </button>
+          <button
+            class="buttonDivide grid-item"
+            id="divide"
+            data-operation
+            data-key="111"
+            value="/"
+          >
+            /
+          </button>
+          <button
+            class="buttonSeven grid-item"
+            id="seven"
+            data-key="103"
+            data-number
+            value="7"
+          >
+            7
+          </button>
+          <button
+            class="buttonEight grid-item"
+            id="eight"
+            data-key="104"
+            data-number
+            value="8"
+          >
+            8
+          </button>
+          <button
+            class="buttonNine grid-item"
+            id="nine"
+            data-key="105"
+            data-number
+            value="9"
+          >
+            9
+          </button>
+          <button
+            class="buttonMultiply grid-item"
+            id="multiply"
+            data-operation
+            data-key="106"
+            value="*"
+          >
+            *
+          </button>
+          <button
+            class="buttonFour grid-item"
+            id="four"
+            data-key="100"
+            data-number
+            value="4"
+          >
+            4
+          </button>
+          <button
+            class="buttonFive grid-item"
+            id="five"
+            data-key="101"
+            data-number
+            value="5"
+          >
+            5
+          </button>
+          <button
+            class="buttonSix grid-item"
+            id="six"
+            data-key="102"
+            data-number
+            value="6"
+          >
+            6
+          </button>
+          <button
+            class="buttonAdd grid-item"
+            id="add"
+            data-key="107"
+            data-operation
+            value="+"
+          >
+            +
+          </button>
+          <button
+            class="buttonOne grid-item"
+            data-key="97"
+            id="one"
+            data-number
+            value="1"
+          >
+            1
+          </button>
+          <button
+            class="buttonTwo grid-item"
+            data-key="98"
+            id="two"
+            data-number
+            value="2"
+          >
+            2
+          </button>
+          <button
+            class="buttonThree grid-item"
+            id="three"
+            data-key="99"
+            data-number
+            value="3"
+          >
+            3
+          </button>
+          <button
+            class="buttonSubstract grid-item"
+            id="subtract"
+            data-operation
+            data-key="109"
+            value="-"
+          >
+            -
+          </button>
+          <button class="buttonZero grid-item" id="zero" data-number value="0">
+            0
+          </button>
+          <button class="buttonDecimal grid-item" id="decimal" value=".">
+            .
+          </button>
+          <button
+            class="buttonEquals grid-item"
+            data-key="187"
+            id="equals"
+            value="="
+          >
+            =
+          </button>
+        </div>
+      </div>
+      <div class="footer">Created by Marina G.</div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
